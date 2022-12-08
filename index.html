@@ -35,7 +35,7 @@
   <body>
     <!-- Rating state start -->
 
-    <div class="card-rating">
+    <div id="card-rating" class="card-rating">
       <button class="favourite">
         <span class="material-symbols-outlined"> star </span>
       </button>
@@ -64,15 +64,24 @@
 
     <!-- Thank you state start -->
     <div id="thanks" class="card-thanks">
-      <p>You selected</p>
-      <!-- Add rating here -->
-      <p class="rating">out of 5</p>
-      <h4>Thank you!</h4>
-
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
+      <div class="wrap-thanks">
+        <img
+          alt="A illustration of a gray phone with some images geting off of them like a form that you are giving the feedbak"
+          src="/images/illustration-thank-you.svg"
+        />
+        <div class="select-container">
+          <p class="rating">You selected</p>
+          <span class="value-user"></span>
+          <p class="rating">out of 5</p>
+        </div>
+        <div class="texting-container">
+          <h4 class="title-thanks">Thank you!</h4>
+          <p class="text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
     </div>
     <!-- Thank you state end -->
     <footer>

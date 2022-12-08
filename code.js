@@ -1,10 +1,6 @@
 const btnSubmit = document.querySelector(".submit");
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
-const btn4 = document.getElementById("btn4");
-const btn5 = document.getElementById("btn5");
 const thanksCard = document.getElementById("thanks");
+const ratingCard = document.getElementById("card-rating");
 const alertP = document.getElementById("alert");
 
 let clicked = false;
@@ -24,6 +20,8 @@ for (let i = 0; i < buttonsRating.length; i++) {
 function submitRating() {
   if (clicked) {
     console.log("You Submit");
+    ratingCard.style.display = "none";
+    thanksCard.style.display = "block";
   } else {
     alertP.textContent = "Please choose between 1-5 in the buttons above. ";
     alertP.style.display = "block";

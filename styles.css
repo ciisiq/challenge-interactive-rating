@@ -9,6 +9,10 @@
   --orange: hsl(25, 97%, 53%);
 }
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   background-color: var(--Very-Dark-Blue);
@@ -24,7 +28,8 @@ body {
 
 /* -------- Rating state start -------- */
 
-.card-rating {
+.card-rating,
+.card-thanks {
   background-color: var(--Dark-Blue);
   background-image: linear-gradient(
     to bottom,
@@ -53,7 +58,7 @@ body {
   width: 3rem;
   cursor: pointer;
   margin-left: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text-container {
@@ -63,13 +68,14 @@ body {
 
 h1 {
   font-size: 24px;
-  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-.rating-request {
+.rating-request,
+.text {
   font-size: 15px;
-  font-weight: lighter;
   color: var(--Light-Grey);
+  line-height: 1.5;
 }
 
 .btn-container {
@@ -77,6 +83,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 1.5rem;
 }
 
 .btn-rating {
@@ -129,27 +136,63 @@ h1 {
   color: var(--Light-Grey);
 }
 /* -------- Rating state end ---------- */
-
 /* ------- Thank you state start ------- */
 
 .card-thanks {
   display: none;
 }
-/* -------- Thank you state end ------- */
 
+.wrap-thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin: 2rem 0 2rem 0;
+}
+
+.select-container {
+  display: flex;
+  color: var(--orange);
+  background-color: var(--Dark-Blue);
+  box-shadow: rgba(16, 16, 16, 0.2) 0px 2px 8px 0px;
+  border-radius: 4rem;
+  width: 12rem;
+  height: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.title-thanks {
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.texting-container {
+  text-align: center;
+  margin: 0 2rem 0 2rem;
+}
+/* -------- Thank you state end ------- */
 /* --------- Footer Start ---------- */
 
 footer {
   margin-top: 2rem;
 }
 
-a:link {
+a {
   color: var(--orange);
   text-decoration: none;
 }
 
-a:visited {
+a:link {
   color: var(--Light-Grey);
+}
+
+a:visited {
+  color: var(--orange);
   text-decoration: none;
 }
 /* --------- Footer ends ---------- */
