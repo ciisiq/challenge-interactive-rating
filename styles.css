@@ -134,6 +134,7 @@ h1 {
   display: none;
   font-size: 15px;
   color: var(--Light-Grey);
+  margin-top: 1rem;
 }
 /* -------- Rating state end ---------- */
 /* ------- Thank you state start ------- */
@@ -175,6 +176,7 @@ img {
   text-align: center;
   margin: 0 2rem 0 2rem;
 }
+
 /* -------- Thank you state end ------- */
 /* --------- Footer Start ---------- */
 
@@ -182,17 +184,39 @@ footer {
   margin-top: 2rem;
 }
 
-a {
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
   color: var(--orange);
   text-decoration: none;
+  cursor: pointer;
 }
 
-a:link {
-  color: var(--Light-Grey);
-}
-
-a:visited {
-  color: var(--orange);
-  text-decoration: none;
-}
 /* --------- Footer ends ---------- */
+
+@media only screen and (max-width: 412px) {
+  .card-rating,
+  .card-thanks {
+    width: 22rem;
+    height: 24rem;
+    border-radius: 1.5rem;
+  }
+
+  .favourite {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem 0 1.3rem 1.3rem;
+  }
+
+  .text-container {
+    margin: 0 1.3rem 0 1.3rem;
+  }
+
+  .submit {
+    width: 19rem;
+    height: 2.9rem;
+    margin-bottom: 2rem;
+  }
+}

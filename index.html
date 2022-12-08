@@ -20,69 +20,59 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <!-- Rating state start -->
+    <main>
+      <div id="card-rating" class="card-rating">
+        <button class="favourite">
+          <span class="material-symbols-outlined"> star </span>
+        </button>
+        <div class="text-container">
+          <h1>How did we do?</h1>
 
-    <div id="card-rating" class="card-rating">
-      <button class="favourite">
-        <span class="material-symbols-outlined"> star </span>
-      </button>
-      <div class="text-container">
-        <h1>How did we do?</h1>
-
-        <p class="rating-request">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-      </div>
-      <div class="btn-container">
-        <button id="btn1" class="btn-rating" value="1">1</button>
-        <button id="btn2" class="btn-rating" value="2">2</button>
-        <button id="btn3" class="btn-rating" value="3">3</button>
-        <button id="btn4" class="btn-rating" value="4">4</button>
-        <button id="btn5" class="btn-rating" value="5">5</button>
-      </div>
-      <div class="sub-container">
-        <button class="submit">SUBMIT</button>
-      </div>
-    </div>
-
-    <p id="alert" class="alert"></p>
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-    <div id="thanks" class="card-thanks">
-      <div class="wrap-thanks">
-        <img
-          alt="A illustration of a gray phone with some images geting off of them like a form that you are giving the feedbak"
-          src="/images/illustration-thank-you.svg"
-        />
-        <div class="select-container">
-          <p class="rating">You selected&nbsp</p>
-          <span id="user-value" class="value-user"></span>
-          <p class="rating">&nbspout of 5</p>
-        </div>
-        <div class="texting-container">
-          <h4 class="title-thanks">Thank you!</h4>
-          <p class="text">
-            We appreciate you taking the time to give a rating. If you ever need
-            more support, don’t hesitate to get in touch!
+          <p class="rating-request">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
           </p>
         </div>
+        <div class="btn-container">
+          <button id="btn1" class="btn-rating" value="1">1</button>
+          <button id="btn2" class="btn-rating" value="2">2</button>
+          <button id="btn3" class="btn-rating" value="3">3</button>
+          <button id="btn4" class="btn-rating" value="4">4</button>
+          <button id="btn5" class="btn-rating" value="5">5</button>
+        </div>
+        <div class="sub-container">
+          <button class="submit">SUBMIT</button>
+        </div>
       </div>
-    </div>
+
+      <p id="alert" class="alert"></p>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div id="thanks" class="card-thanks">
+        <div class="wrap-thanks">
+          <img
+            alt="A illustration of a gray phone with some images geting off of them like a form that you are giving the feedbak"
+            src="/images/illustration-thank-you.svg"
+          />
+          <div class="select-container">
+            <p class="rating">You selected&nbsp</p>
+            <span id="user-value" class="value-user"></span>
+            <p class="rating">&nbspout of 5</p>
+          </div>
+          <div class="texting-container">
+            <h4 class="title-thanks">Thank you!</h4>
+            <p class="text">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Thank you state end -->
     <footer>
       <div class="attribution">

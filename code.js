@@ -12,7 +12,6 @@ let buttonsRating = document.querySelectorAll(".btn-rating");
 for (let i = 0; i < buttonsRating.length; i++) {
   buttonsRating[i].addEventListener("click", function (e) {
     valueRating = e.target.value;
-    console.log(valueRating);
     clicked = true;
     alertP.style.display = "none";
   });
@@ -20,7 +19,6 @@ for (let i = 0; i < buttonsRating.length; i++) {
 
 function submitRating() {
   if (clicked) {
-    console.log("You Submit");
     ratingCard.style.display = "none";
     thanksCard.style.display = "block";
     userRating.textContent = valueRating;
