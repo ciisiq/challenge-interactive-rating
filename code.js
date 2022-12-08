@@ -2,6 +2,7 @@ const btnSubmit = document.querySelector(".submit");
 const thanksCard = document.getElementById("thanks");
 const ratingCard = document.getElementById("card-rating");
 const alertP = document.getElementById("alert");
+const userRating = document.getElementById("user-value");
 
 let clicked = false;
 let valueRating = 0;
@@ -22,6 +23,7 @@ function submitRating() {
     console.log("You Submit");
     ratingCard.style.display = "none";
     thanksCard.style.display = "block";
+    userRating.textContent = valueRating;
   } else {
     alertP.textContent = "Please choose between 1-5 in the buttons above. ";
     alertP.style.display = "block";
