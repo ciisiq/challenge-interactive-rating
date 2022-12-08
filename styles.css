@@ -91,7 +91,7 @@ h1 {
   margin: 0.5rem;
 }
 
-.btn-rating:active {
+.btn-rating:focus {
   background-color: var(--Light-Grey);
 }
 
@@ -121,6 +121,12 @@ h1 {
 .submit:active {
   background-color: var(--White);
   color: var(--orange);
+}
+
+.alert {
+  display: none;
+  font-size: 15px;
+  color: var(--Light-Grey);
 }
 /* -------- Rating state end ---------- */
 

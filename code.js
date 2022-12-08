@@ -5,24 +5,29 @@ const btn3 = document.getElementById("btn3");
 const btn4 = document.getElementById("btn4");
 const btn5 = document.getElementById("btn5");
 const thanksCard = document.getElementById("thanks");
+const alertP = document.getElementById("alert");
 
 let clicked = false;
+let valueRating = 0;
 
-function submitRating(value) {
-  clicked = true;
+let buttonsRating = document.querySelectorAll(".btn-rating");
 
+for (let i = 0; i < buttonsRating.length; i++) {
+  buttonsRating[i].addEventListener("click", function (e) {
+    valueRating = e.target.value;
+    console.log(valueRating);
+    clicked = true;
+    alertP.style.display = "none";
+  });
+}
+
+function submitRating() {
   if (clicked) {
-    console.log("I'm clicked");
+    console.log("You Submit");
+  } else {
+    alertP.textContent = "Please choose between 1-5 in the buttons above. ";
+    alertP.style.display = "block";
   }
 }
 
 btnSubmit.addEventListener("click", submitRating);
-btn1.addEventListener("click", submitRating(1));
-btn2.addEventListener("click", submitRating(2));
-btn3.addEventListener("click", submitRating(3));
-btn4.addEventListener("click", submitRating(4));
-btn5.addEventListener("click", submitRating(5));
-
-let arrRating = [1, 2, 3, 4, 5];
-
-for (let i = 0; i < arrRating.length; i++) {}
