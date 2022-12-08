@@ -6,6 +6,7 @@
   --Medium-Grey: hsl(216, 12%, 54%);
   --Dark-Blue: hsl(213, 19%, 18%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -24,11 +26,101 @@ body {
 
 .card-rating {
   background-color: var(--Dark-Blue);
+  background-image: linear-gradient(
+    to bottom,
+    #232933,
+    #202631,
+    #1d242e,
+    #1b212c,
+    #181f2a
+  );
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-radius: 2rem;
   width: 25rem;
-  height: 20rem;
+  height: 25rem;
+}
+
+.favourite {
+  border-radius: 100%;
+  background-color: var(--Dark-Blue);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  color: var(--orange);
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.rating-request {
+  font-size: 15px;
+  font-weight: lighter;
+  color: var(--Light-Grey);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-rating {
+  border-radius: 100%;
+  background-color: var(--Dark-Blue);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  color: var(--White);
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.btn-rating:active {
+  background-color: var(--Light-Grey);
+}
+
+.btn-rating:hover {
+  background-color: var(--orange);
+}
+
+.sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit {
+  background-color: var(--orange);
+  border: none;
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  color: var(--White);
+  cursor: pointer;
+  box-shadow: rgba(16, 16, 16, 0.2) 0px 2px 8px 0px;
+  margin-top: 1rem;
+}
+
+.submit:hover,
+.submit:active {
+  background-color: var(--White);
+  color: var(--orange);
 }
 /* -------- Rating state end ---------- */
 
@@ -40,4 +132,18 @@ body {
 /* -------- Thank you state end ------- */
 
 /* --------- Footer Start ---------- */
+
+footer {
+  margin-top: 2rem;
+}
+
+a:link {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--Light-Grey);
+  text-decoration: none;
+}
 /* --------- Footer ends ---------- */
