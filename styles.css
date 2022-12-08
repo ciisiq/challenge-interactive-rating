@@ -26,6 +26,13 @@ body {
   flex-direction: column;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* -------- Rating state start -------- */
 
 .card-rating,
